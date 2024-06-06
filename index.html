@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Maps Standalone</title>
+<style>
+  .map-container {
+    height: 70vh; /* Adjust the height as needed */
+    width: 100%;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      display: none;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+  <div id="loadingIndicator" class="loader"></div>
+  <div class="map-container" id="mapContainer"></div>
+  <div id="addressDetails"></div> 
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq8asVVp-2DgLzhrpGT5HNgT1Fj46yF7Q&callback=initMap" async defer></script> -->
+<script src="map.component.js"></script>
+</body>
+</html>
