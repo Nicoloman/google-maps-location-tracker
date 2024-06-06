@@ -55,5 +55,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 ## Contact
 
 For any inquiries or feedback, feel free to [contact me](mailto:nicolomanto@gmail.com).
-
-```
